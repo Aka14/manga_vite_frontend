@@ -11,8 +11,8 @@ import { API_URL } from "./config/index.js";
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
-  "https://rwljtpxwkrwlhblvrfkv.supabase.co",
-  "sb_publishable_DUtOZlMRIusJ-Wknan_Q6w_Z3uOnDVv",
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY,
 );
 
 function App() {
