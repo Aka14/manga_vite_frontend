@@ -19,10 +19,10 @@ const Card = ({
         <p className="font-bold text-xl">{manga_name}</p>
         <p className="text-md">{current_chapter}</p>
         <a
-          href={`${BASE_URL}${chapter_url}`}
+          href={`${chapter_url}`}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()} // prevents link click from triggering menu
+          onClick={(e) => e.stopPropagation()}
         >
           <img
             className="h-85 rounded-2xl py-2 object-cover"
